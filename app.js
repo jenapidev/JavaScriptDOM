@@ -101,12 +101,27 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
 
         scores[activePlayer] += roundScore;
 
+        var input = document.getElementById('final-score').value;
+
+        var topScore;
+
+        
+
         //update UI
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
 
         //check if has won the game
 
-        if(scores[activePlayer] >= 20) {
+        var input = document.getElementById('final-score').value;
+        var topScore;
+
+        if (input) {
+            topScore = input;
+        } else {
+            topScore = 100;
+        }
+
+        if(scores[activePlayer] >= topScore) {
             document.getElementById('name-' + activePlayer).textContent = 'winner!'; 
             document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
             document.querySelector('.dice-0').style.display = 'none';

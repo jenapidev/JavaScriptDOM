@@ -11,4 +11,5 @@
 - The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
 - The first player to reach 100 points on GLOBAL score wins the game
 
+check this experiment following the link <a href="http://jenapidev.github.io/JavaScriptDOM" style="texr-transform: uppercase;">go ahead</a>
 
